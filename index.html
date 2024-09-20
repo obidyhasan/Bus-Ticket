@@ -37,6 +37,7 @@
               primary_light: "#1DD10026",
               card1: "#FFBF0F",
               card2: "#F78C9C",
+              light_bg: "#F7F8F8",
             },
             fontFamily: {
               inter: "Inter",
@@ -219,7 +220,41 @@
     </section>
 
     <!-- Main Section -->
-    <main></main>
+    <main class="w-full bg-light_bg rounded-3xl border-t-2 border-primary">
+      <section class="max-w-7xl mx-auto p-7">
+        <div class="max-w-2xl text-center mx-auto mt-20">
+          <h2 class="text-3xl font-bold">P.H Paribahan</h2>
+          <p class="font-inter text-gray-500 text-sm mt-3">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+
+        <!-- Card -->
+        <section
+          class="w-full bg-white p-5 rounded-md flex justify-between mt-10"
+        >
+          <div class="flex justify-between relative flex-1">
+            <div></div>
+
+            <div class="flex justify-center">
+              <div
+                class="w-10 h-10 bg-light_bg rounded-full absolute -top-10"
+              ></div>
+              <div class="h-full border-l-2 border-dashed border-primary"></div>
+              <div
+                class="w-10 h-10 bg-light_bg rounded-full absolute -bottom-10"
+              ></div>
+            </div>
+          </div>
+          <div class="w-2/12 flex items-center justify-center flex-col gap-2">
+            <img src="./assets/images/fare.png" class="w-8" alt="" />
+            <h3 class="font-extrabold text-2xl">550 Taka</h3>
+            <p class="font-semibold text-gray-500 text-sm">Per Seat</p>
+          </div>
+        </section>
+      </section>
+    </main>
 
     <!-- Footer Section -->
     <footer></footer>
