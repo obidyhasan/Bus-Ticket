@@ -42,6 +42,10 @@
               inter: "Inter",
               railway: "Raleway",
             },
+            backgroundImage: (theme) => ({
+              "hero-bg":
+                "linear-gradient(180.00deg, rgba(3, 7, 18, 0.2),rgba(3, 7, 18, 0) 100%), url('./assets/images/banner.png')",
+            }),
           },
         },
       };
@@ -49,7 +53,7 @@
   </head>
   <body class="font-railway">
     <!-- Navbar Section -->
-    <nav class="bg-white sticky top-0">
+    <nav class="bg-white sticky top-0 z-10">
       <div class="navbar max-w-7xl mx-auto py-3 px-5">
         <div class="navbar-start">
           <div class="dropdown">
@@ -101,7 +105,59 @@
     </nav>
 
     <!-- Header Section -->
-    <header></header>
+    <header class="max-w-7xl mx-auto px-5 relative">
+      <section
+        class="bg-hero-bg h-[550px] bg-no-repeat bg-center bg-cover rounded-2xl text-center flex flex-col items-center justify-center p-5"
+      >
+        <h1
+          class="text-white text-4xl sm:text-5xl font-extrabold max-w-[550px] text-center mx-auto"
+        >
+          End-to-End Travel with <span class="text-primary">P Paribahan</span>
+        </h1>
+        <p class="text-gray-200 text-sm max-w-lg mx-auto text-center my-7">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+        <button class="btn bg-primary border-primary text-white font-bold px-5">
+          Buy Tickets
+        </button>
+
+        <!-- card section -->
+        <section
+          class="lg:w-9/12 w-full font-inter grid sm:grid-cols-2 lg:grid-cols-3 gap-5 absolute -bottom-[340px] sm:-bottom-60 lg:-bottom-11 px-5"
+        >
+          <div
+            class="w-full bg-white p-5 flex items-center gap-5 border-b-2 border-primary rounded-xl shadow"
+          >
+            <img src="./assets/images/people.png" class="w-12" alt="" />
+            <div class="text-left">
+              <h3 class="font-extrabold text-xl">500K+</h3>
+              <p class="text-sm text-gray-500">Registered users</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-5 flex items-center gap-5 border-b-2 border-primary rounded-xl shadow"
+          >
+            <img src="./assets/images/ticket-cupon.png" class="w-12" alt="" />
+            <div class="text-left">
+              <h3 class="font-extrabold text-xl">1.7 lacks</h3>
+              <p class="text-sm text-gray-500">Tickets Sold</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-5 flex items-center gap-5 border-b-2 border-primary rounded-xl shadow"
+          >
+            <img src="./assets/images/stoppage.png" class="w-12" alt="" />
+            <div class="text-left">
+              <h3 class="font-extrabold text-xl">80K+</h3>
+              <p class="text-sm text-gray-500">Rental Partners</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </header>
 
     <!-- Offers Section -->
     <section></section>
