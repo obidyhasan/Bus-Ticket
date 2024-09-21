@@ -38,6 +38,7 @@
               card1: "#FFBF0F",
               card2: "#F78C9C",
               light_bg: "#F7F8F8",
+              dialog: "#20AE5C",
             },
             fontFamily: {
               inter: "Inter",
@@ -257,7 +258,9 @@
                   class="bg-primary_light rounded-lg text-primary flex items-center px-5 py-3 gap-1 mt-5 sm:mt-0"
                 >
                   <img src="./assets/images/seat-green.png" alt="" />
-                  <h4 class="font-inter"><span>40</span> Seats left</h4>
+                  <h4 class="font-inter">
+                    <span id="totalSeat">40</span> Seats left
+                  </h4>
                 </div>
               </div>
 
@@ -372,23 +375,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">A</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   A1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   A2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   A3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   A4
                 </button>
@@ -398,23 +405,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">B</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   B1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   B2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   B3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   B4
                 </button>
@@ -424,23 +435,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">C</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   C1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   C2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   C3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   C4
                 </button>
@@ -450,23 +465,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">D</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   D1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   D2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   D3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   D4
                 </button>
@@ -476,23 +495,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">E</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   E1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   E2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   E3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   E4
                 </button>
@@ -502,23 +525,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">F</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   F1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   F2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   F3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   F4
                 </button>
@@ -528,23 +555,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">G</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   G1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   G2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   G3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   G4
                 </button>
@@ -554,23 +585,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">H</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   H1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   H2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   H3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   H4
                 </button>
@@ -580,23 +615,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">I</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   I1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   I2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   I3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   I4
                 </button>
@@ -606,23 +645,27 @@
               <div class="grid grid-cols-10 gap-5">
                 <div class="flex items-center justify-center">J</div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   J1
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   J2
                 </button>
                 <div></div>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   J3
                 </button>
                 <button
-                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2"
+                  onclick="selectSeatFunction(this)"
+                  class="btn font-medium text-gray-500 shadow-none bg-light_bg col-span-2 hover:bg-primary"
                 >
                   J4
                 </button>
@@ -645,8 +688,9 @@
                 <p class="flex font-semibold">
                   Seat
                   <span
+                    id="countSeat"
                     class="bg-primary w-4 h-4 rounded-full flex items-center justify-center text-white font-semibold text-sm"
-                    >2</span
+                    >0</span
                   >
                 </p>
                 <p class="font-semibold">Class</p>
@@ -659,38 +703,45 @@
               ></div>
 
               <!-- UL -->
-              <ul>
-                <li
-                  class="text-sm font-medium text-gray-500 grid grid-cols-3 my-3"
+              <ul id="bookedListContainer">
+                <h1
+                  id="notBookedText"
+                  class="text-center font-bold text-red-400"
                 >
-                  <span>C2</span>
-                  <span>Economy</span>
-                  <span class="text-right">550</span>
-                </li>
+                  Seat is not booked
+                </h1>
 
-                <li
+                <!-- <li
                   class="text-sm font-medium text-gray-500 grid grid-cols-3 my-3"
                 >
                   <span>C2</span>
                   <span>Economy</span>
                   <span class="text-right">550</span>
-                </li>
+                </li> -->
               </ul>
 
               <div class="border-t-2 w-full border-gray-200 my-4"></div>
 
               <div class="flex justify-between">
                 <p class="font-bold text-sm">Total Price</p>
-                <p class="font-bold text-sm">BDT <span>1100.00</span></p>
+                <p class="font-bold text-sm">
+                  BDT <span id="totalPrice">****</span>
+                </p>
               </div>
 
               <!-- Copun Section -->
               <div class="join w-full my-5">
                 <input
+                  id="couponInput"
+                  disabled
                   class="input w-full join-item rounded-lg placeholder:text-sm"
                   placeholder="Have nay Coupon"
                 />
-                <button class="btn join-item rounded-lg bg-primary text-white">
+                <button
+                  id="couponApply"
+                  disabled
+                  class="btn join-item rounded-lg bg-primary text-white"
+                >
                   Apply
                 </button>
               </div>
@@ -698,7 +749,9 @@
               <!--  -->
               <div class="flex justify-between">
                 <p class="font-bold text-sm">Grand Price</p>
-                <p class="font-bold text-sm">BDT <span>1100.00</span></p>
+                <p class="font-bold text-sm">
+                  BDT <span id="grandPrice">****</span>
+                </p>
               </div>
             </div>
 
@@ -709,6 +762,8 @@
                   <span class="font-bold text-sm">Passenger Name*</span>
                 </div>
                 <input
+                  id="nameInput"
+                  disabled
                   type="text"
                   placeholder="Enter your name"
                   class="input input-bordered w-full placeholder:text-sm rounded-md"
@@ -720,7 +775,9 @@
                   <span class="font-bold text-sm">Phone Number*</span>
                 </div>
                 <input
-                  type="text"
+                  id="numberInput"
+                  disabled
+                  type="number"
                   placeholder="Enter your phone number"
                   class="input input-bordered w-full placeholder:text-sm rounded-md"
                 />
@@ -731,13 +788,20 @@
                   <span class="font-bold text-sm">Email ID</span>
                 </div>
                 <input
+                  id="emailInput"
+                  disabled
                   type="text"
                   placeholder="Enter your email"
                   class="input input-bordered w-full placeholder:text-sm rounded-md"
                 />
               </label>
 
-              <button class="btn bg-primary shadow-none text-white w-full mt-5">
+              <button
+                onclick="my_modal_1.showModal()"
+                id="nextBtn"
+                disabled
+                class="btn bg-primary shadow-none text-white w-full mt-5"
+              >
                 Next
               </button>
 
@@ -793,5 +857,35 @@
         </div>
       </section>
     </footer>
+
+    <!-- Dialog -->
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box text-center p-10">
+        <img
+          src="./assets/images/success.png"
+          class="w-20 mx-auto"
+          alt=""
+          srcset=""
+        />
+        <h3 class="text-lg font-bold text-dialog mt-5">SUCCESS</h3>
+        <p class="font-semibold text-sm mt-5">
+          Thank you for Booking Our Bus Seats. We are working hard to find the
+          best service and deals for you.
+        </p>
+        <p class="text-sm mt-2">
+          Shortly you will find a confirmation in your email.
+        </p>
+
+        <button
+          id="continueBtn"
+          class="btn bg-dialog mt-5 rounded-full px-10 text-white"
+        >
+          Continue
+        </button>
+      </div>
+    </dialog>
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
