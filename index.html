@@ -125,7 +125,7 @@
 
         <!-- card section -->
         <section
-          class="lg:w-9/12 w-full font-inter grid sm:grid-cols-2 lg:grid-cols-3 gap-5 absolute -bottom-[340px] sm:-bottom-60 lg:-bottom-11 px-5"
+          class="lg:w-9/12 w-full font-inter grid sm:grid-cols-2 md:grid-cols-3 gap-5 absolute -bottom-[340px] sm:-bottom-60 lg:-bottom-11 px-5 md:-bottom-32"
         >
           <div
             class="w-full bg-white p-5 flex items-center gap-5 border-b-2 border-primary rounded-xl shadow"
@@ -161,7 +161,9 @@
     </header>
 
     <!-- Offers Section -->
-    <section class="max-w-7xl mx-auto px-5 mt-96 sm:mt-72 lg:mt-28 mb-20">
+    <section
+      class="max-w-7xl mx-auto px-5 mt-96 sm:mt-72 md:mt-48 lg:mt-28 mb-20"
+    >
       <h1 class="text-center text-2xl font-extrabold">Best Offers for you</h1>
       <!-- offer Card -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
@@ -220,7 +222,9 @@
     </section>
 
     <!-- Main Section -->
-    <main class="w-full bg-light_bg rounded-3xl border-t-2 border-primary">
+    <main
+      class="w-full bg-light_bg rounded-3xl border-t-2 border-primary pb-16"
+    >
       <!-- Route Section -->
       <section class="max-w-7xl mx-auto p-5">
         <div class="max-w-2xl text-center mx-auto mt-20">
@@ -318,7 +322,9 @@
 
       <!-- Bus Ticket Section -->
       <section class="max-w-7xl mx-auto p-5">
-        <section class="bg-white rounded-lg grid grid-cols-5 p-5">
+        <section
+          class="bg-white rounded-lg grid grid-cols-1 lg:grid-cols-5 p-5"
+        >
           <!-- ticket div -->
           <div class="col-span-3">
             <h3 class="font-bold text-xl">Select your Seat</h3>
@@ -626,13 +632,122 @@
 
           <!-- Form Section -->
           <div
-            class="col-span-2 border-l-2 border-dashed border-gray-200 ml-5 pl-5"
+            class="col-span-2 lg:border-l-2 mt-10 lg:mt-0 lg:border-dashed lg:border-gray-200 lg:ml-5 lg:pl-5 font-inter"
           >
             <h3 class="font-bold text-xl">Select your Seat</h3>
             <!-- Border -->
             <div
               class="border-t-2 w-full border-gray-200 border-dashed my-4"
             ></div>
+
+            <div class="p-5 bg-light_bg rounded-lg">
+              <div class="grid grid-cols-3">
+                <p class="flex font-semibold">
+                  Seat
+                  <span
+                    class="bg-primary w-4 h-4 rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                    >2</span
+                  >
+                </p>
+                <p class="font-semibold">Class</p>
+                <p class="font-semibold text-right">Price</p>
+              </div>
+
+              <!-- Border -->
+              <div
+                class="border-t-2 w-full border-gray-200 border-dashed my-4"
+              ></div>
+
+              <!-- UL -->
+              <ul>
+                <li
+                  class="text-sm font-medium text-gray-500 grid grid-cols-3 my-3"
+                >
+                  <span>C2</span>
+                  <span>Economy</span>
+                  <span class="text-right">550</span>
+                </li>
+
+                <li
+                  class="text-sm font-medium text-gray-500 grid grid-cols-3 my-3"
+                >
+                  <span>C2</span>
+                  <span>Economy</span>
+                  <span class="text-right">550</span>
+                </li>
+              </ul>
+
+              <div class="border-t-2 w-full border-gray-200 my-4"></div>
+
+              <div class="flex justify-between">
+                <p class="font-bold text-sm">Total Price</p>
+                <p class="font-bold text-sm">BDT <span>1100.00</span></p>
+              </div>
+
+              <!-- Copun Section -->
+              <div class="join w-full my-5">
+                <input
+                  class="input w-full join-item rounded-lg placeholder:text-sm"
+                  placeholder="Have nay Coupon"
+                />
+                <button class="btn join-item rounded-lg bg-primary text-white">
+                  Apply
+                </button>
+              </div>
+
+              <!--  -->
+              <div class="flex justify-between">
+                <p class="font-bold text-sm">Grand Price</p>
+                <p class="font-bold text-sm">BDT <span>1100.00</span></p>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="mt-5">
+              <label class="form-control w-full">
+                <div class="label">
+                  <span class="font-bold text-sm">Passenger Name*</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="input input-bordered w-full placeholder:text-sm rounded-md"
+                />
+              </label>
+
+              <label class="form-control w-full mt-2">
+                <div class="label">
+                  <span class="font-bold text-sm">Phone Number*</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your phone number"
+                  class="input input-bordered w-full placeholder:text-sm rounded-md"
+                />
+              </label>
+              <!--  -->
+              <label class="form-control w-full mt-2">
+                <div class="label">
+                  <span class="font-bold text-sm">Email ID</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="input input-bordered w-full placeholder:text-sm rounded-md"
+                />
+              </label>
+
+              <button class="btn bg-primary shadow-none text-white w-full mt-5">
+                Next
+              </button>
+
+              <div
+                class="flex justify-around mt-3 text-sm underline text-gray-500"
+              >
+                <a href="#" class="">Terms and Conditions</a>
+                <a href="#" class="">Cancellation Policy</a>
+              </div>
+            </div>
           </div>
         </section>
       </section>
