@@ -221,6 +221,7 @@
 
     <!-- Main Section -->
     <main class="w-full bg-light_bg rounded-3xl border-t-2 border-primary">
+      <!-- Route Section -->
       <section class="max-w-7xl mx-auto p-7">
         <div class="max-w-2xl text-center mx-auto mt-20">
           <h2 class="text-3xl font-bold">P.H Paribahan</h2>
@@ -232,12 +233,69 @@
 
         <!-- Card -->
         <section
-          class="w-full bg-white p-5 rounded-md flex justify-between mt-10"
+          class="w-full bg-white p-5 rounded-md flex flex-col lg:flex-row justify-between mt-10"
         >
           <div class="flex justify-between relative flex-1">
-            <div></div>
+            <div class="w-full lg:pr-10">
+              <!-- title -->
+              <div class="flex justify-between items-center flex-wrap">
+                <div class="flex items-center gap-3 flex-wrap">
+                  <img src="./assets/images/bus-logo.png" class="w-14" alt="" />
+                  <div>
+                    <h3 class="font-extrabold text-2xl">Greenline Paribahan</h3>
+                    <p class="font-inter text-gray-500 text-sm">
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
 
-            <div class="flex justify-center">
+                <div
+                  class="bg-primary_light rounded-lg text-primary flex items-center px-5 py-3 gap-1 mt-5 sm:mt-0"
+                >
+                  <img src="./assets/images/seat-green.png" alt="" />
+                  <h4 class="font-inter"><span>40</span> Seats left</h4>
+                </div>
+              </div>
+
+              <!-- Route -->
+              <div class="bg-light_bg rounded-lg mt-5 p-5">
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-gray-500">Route</span>
+                  <span class="font-bold">Dhaka - Sylhet</span>
+                </div>
+
+                <div
+                  class="border-t-2 w-full border-gray-200 border-dashed my-4"
+                ></div>
+
+                <div class="flex items-center justify-between">
+                  <span class="font-semibold text-gray-500"
+                    >Departure Time</span
+                  >
+                  <span class="font-bold">9:00 PM</span>
+                </div>
+
+                <div
+                  class="border-t-2 w-full border-gray-200 border-dashed my-3"
+                ></div>
+
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-5"
+                >
+                  <div class="btn bg-base-300 shadow-none">
+                    Boarding Point - Laxmipur
+                  </div>
+                  <div class="btn bg-base-300 shadow-none">
+                    Dropping Point - Bogura
+                  </div>
+                  <div class="btn bg-base-300 shadow-none">
+                    Est. Time-11 Hour
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:flex justify-center hidden">
               <div
                 class="w-10 h-10 bg-light_bg rounded-full absolute -top-10"
               ></div>
@@ -247,9 +305,11 @@
               ></div>
             </div>
           </div>
-          <div class="w-2/12 flex items-center justify-center flex-col gap-2">
+          <div
+            class="w-full lg:w-2/12 flex items-center justify-center flex-col gap-2 lg:pl-5 pt-5 lg:pt-0"
+          >
             <img src="./assets/images/fare.png" class="w-8" alt="" />
-            <h3 class="font-extrabold text-2xl">550 Taka</h3>
+            <h3 class="font-extrabold text-2xl text-center">550 Taka</h3>
             <p class="font-semibold text-gray-500 text-sm">Per Seat</p>
           </div>
         </section>
